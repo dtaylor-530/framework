@@ -123,6 +123,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\GAFormTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Applications\Optimization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +146,14 @@
     <Compile Include="Applications\TimeSeries.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Wrapper\ApproximationWrap.cs" />
+    <Compile Include="Wrapper\Error.cs" />
+    <Compile Include="Wrapper\IGeneticWrap.cs" />
+    <Compile Include="Wrapper\Optimisation1DWrap.cs" />
+    <Compile Include="Wrapper\Optimisation2DWrap.cs" />
+    <Compile Include="Wrapper\Result.cs" />
+    <Compile Include="Wrapper\TimeSeriesWrap.cs" />
+    <Compile Include="Wrapper\UserFunction.cs" />
     <EmbeddedResource Include="Applications\Approximation.resx">
       <DependentUpon>Approximation.cs</DependentUpon>
       <SubType>Designer</SubType>
